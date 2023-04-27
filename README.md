@@ -26,7 +26,7 @@ Pour installer paho-mqtt, vous pouvez lancer la commande `pip install paho-mqtt`
 3. Ouvrez un terminal dans le même dossier
 4. Pour créer le fichier des utilisateurs lancez la requête `mosquitto_passwd -c mosquitto_pwd_file admin`
 5. Comme mot de passe, entrez `admin`
-6. (Facultatif) Pour ajouter d'autres utilisateurs, lancer la requête `mosquitto_passwd mosquitto_pwd_file [username] [password]`
+6. (Facultatif) Pour ajouter d'autres utilisateurs, lancer la requête `mosquitto_passwd -b mosquitto_pwd_file [username] [password]`
 
 Par défaut le client se connecte sur `localhost:1883` et vérifie que la connexion est toujours active et que les deux parties sont toujours en communication toutes les 45s.
 
